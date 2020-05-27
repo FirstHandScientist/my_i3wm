@@ -248,10 +248,14 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 #bindsym Mod4+x exec i3-exit
 
-# move focused workspace between monitors
+# move focused workspace between monitors/output sources
 bindsym Mod4+Ctrl+greater move workspace to output right
 bindsym Mod4+Ctrl+less move workspace to output left
-
+# move focuse between monitors/output sources
+bindsym Mod4+Control+Left focus output left
+bindsym Mod4+Control+Right focus output right
+bindsym Mod4+Control+j focus output left
+bindsym Mod4+Control+k focus output right
 
 # handle the lock shutdown etc
 # set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
