@@ -11,7 +11,7 @@
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 13
+font pango:monospace 11
 
 set $base00 #101218
 set $base01 #1f222d
@@ -249,13 +249,19 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 #bindsym Mod4+x exec i3-exit
 
 # move focused workspace between monitors/output sources
-bindsym Mod4+Ctrl+greater move workspace to output right
-bindsym Mod4+Ctrl+less move workspace to output left
+# the left-right palcement of outputs
+# bindsym Mod4+Ctrl+greater move workspace to output right
+# bindsym Mod4+Ctrl+less move workspace to output left
+# the up-down palcement of outputs
+bindsym Mod4+Ctrl+greater move workspace to output up
+bindsym Mod4+Ctrl+less move workspace to output down
 # move focuse between monitors/output sources
 bindsym Mod4+Control+Left focus output left
 bindsym Mod4+Control+Right focus output right
-bindsym Mod4+Control+j focus output left
-bindsym Mod4+Control+k focus output right
+bindsym Mod4+Control+j focus output up
+bindsym Mod4+Control+k focus output down
+bindsym Mod4+Control+h focus output left
+bindsym Mod4+Control+l focus output right
 
 # handle the lock shutdown etc
 # set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
