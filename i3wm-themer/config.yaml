@@ -1,0 +1,5 @@
+i3-config: /home/dong/.config/i3/config
+polybar-config: /home/dong/.config/polybar/config
+xresources: /home/dong/.Xresources
+nitrogen-config: /home/dong/.config/nitrogen/bg-saved.cfg
+wallpaper-path: /home/dong/.config/nitrogen/

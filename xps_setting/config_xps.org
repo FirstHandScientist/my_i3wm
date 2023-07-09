@@ -1,0 +1,6 @@
+* how to change default kernel
+  https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html
+
+* Install oem kernel
+  https://wiki.ubuntu.com/Kernel/OEMKernel
+  
