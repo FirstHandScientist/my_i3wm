@@ -27,3 +27,8 @@ testing the set parameter by refer to https://askubuntu.com/questions/948373/cha
 
 * touch screen auto rotation
   refer to this repos: https://gist.github.com/mortie/e725d37a71779b18e8eaaf4f8a02bf5b#file-auto-screen-rotate-sh
+
+
+* Kernel
+dong@newton:~$ uname -a
+Linux newton 5.10.0-1008-oem #9-Ubuntu SMP Tue Dec 15 14:22:38 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
