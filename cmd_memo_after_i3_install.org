@@ -1,0 +1,10 @@
+* mixer control 
+  - pavucontrol
+
+* setting touchpad for i3wm 
+https://major.io/2021/07/18/tray-icons-in-i3/
+* setting for the size of title bars in i3wm-ubuntu
+  - https://askubuntu.com/questions/1358632/how-to-reduce-the-height-of-headerbar-titlebar-of-gtk3-apps-using-csd
+
+- for terminal title bar:
+https://askubuntu.com/questions/1230157/how-to-remove-title-bar-from-terminal-on-the-new-ubuntu-20-04
