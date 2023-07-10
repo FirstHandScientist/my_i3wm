@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html -->
+<html lang="en" class="js fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- Begin Jekyll GTM tag v1.0.3 -->
+<script async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/insight.beta.min.js"></script><script type="text/javascript" async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/insight.min.js"></script><script type="text/javascript" async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/js"></script><script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/366601784056912" async=""></script><script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/sdk.js" async="" crossorigin="anonymous"></script><script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/conversations-embed.js" type="text/javascript" id="hubspot-messages-loader" data-loader="hs-scriptloader" data-hsjs-portal="6759396" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/fb.js" type="text/javascript" id="hs-ads-pixel-6759396" data-ads-portal-id="6759396" data-ads-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="6759396" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/leadflows.js" type="text/javascript" id="LeadFlows-6759396" crossorigin="anonymous" data-leadin-portal-id="6759396" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="6759396" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/collectedforms.js" type="text/javascript" id="CollectedForms-6759396" crossorigin="anonymous" data-leadin-portal-id="6759396" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="6759396" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/banner.js" type="text/javascript" id="cookieBanner-6759396" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="6759396" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/6759396.js" type="text/javascript" id="hs-analytics"></script><script id="facebook-jssdk" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/sdk(1).js"></script><script async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/fbevents.js"></script><script type="text/javascript" async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/analytics.js"></script><script async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/0349255595f1b5040a9f433f8.js"></script><script async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/gtm.js"></script><script async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/gtm(1).js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N8NWRND');</script>
+<!-- End Jekyll GTM tag v1.0.3 -->
+
+    
+    
+
+
+  <!-- The other part (top part) of GTAG code is on head/custom.html -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDM4B9B"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+
+    
+    
+
+<!-- begin _includes/seo.html --><title>How to Change the Default Ubuntu Kernel - Meetrix.IO</title>
+<meta name="description" content="A complete guide and tutorial on how to change the default ubuntu kernel.">
+
+
+  <meta name="author" content="Buddhika Jayawardhana (Jay)">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Meetrix.IO">
+<meta property="og:title" content="How to Change the Default Ubuntu Kernel">
+<meta property="og:url" content="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html">
+
+
+  <meta property="og:description" content="A complete guide and tutorial on how to change the default ubuntu kernel.">
+
+
+
+  <meta property="og:image" content="https://meetrix.io/blog/assets/images/aws/04-how-to-change-the-default-ubuntu-kernel/change-ubuntu-kernel.jpg">
+
+
+
+  <meta name="twitter:site" content="@meetrixio">
+  <meta name="twitter:title" content="How to Change the Default Ubuntu Kernel">
+  <meta name="twitter:description" content="A complete guide and tutorial on how to change the default ubuntu kernel.">
+  <meta name="twitter:url" content="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://meetrix.io/blog/assets/images/aws/04-how-to-change-the-default-ubuntu-kernel/change-ubuntu-kernel.jpg">
+  
+
+  
+    <meta name="twitter:creator" content="@buddhikajaywar">
+  
+
+
+
+  <meta property="article:published_time" content="2023-06-14T10:41:42+00:00">
+
+
+
+  <meta property="article:modified_time" content="2018-08-05T19:59:07+00:00">
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/meetrix">
+  
+
+  
+    <meta property="fb:app_id" content="131906234232845">
+  
+
+
+<style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1em}.svg-inline--fa.fa-stack-2x{height:2em;width:2em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style><link rel="canonical" href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://meetrix.io/blog",
+      "logo": "https://meetrix.io/blog/assets/images/meetrix-landing.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Meetrix.IO",
+      "url": "https://meetrix.io/blog",
+      "sameAs": ["https://twitter.com/meetrixio","https://facebook.com/meetrix"]
+    }
+  </script>
+
+
+
+
+  <meta name="msvalidate.01" content="53B02860BD1F31C45107AE70A2A93AF0">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://meetrix.io/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Meetrix.IO Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+<!-- For all browsers -->
+<link rel="stylesheet" href="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KDM4B9B');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Mainchimp -->
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c4cd8a5295e2e77ed70a686cc/0349255595f1b5040a9f433f8.js");</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async="" defer="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/6759396(1).js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- end custom head snippets -->
+
+
+  <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/js(1)"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+xK4jmZTgh1KBVry/UZKUE3h6Dr9HPPioFS4KNCzify+KEoOii7z/goKS2zgbAOwhpZ1GZllpdz7XviivJM9gcAAACFeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiQXR0cmlidXRpb25SZXBvcnRpbmdDcm9zc0FwcFdlYiIsImV4cGlyeSI6MTcwNzI2Mzk5OSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/f.txt"></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+
+  <body class="layout--single" style="margin-bottom: 221.887px;" data-new-gr-c-s-check-loaded="14.1114.0" data-gr-ext-installed=""><style type="text/css">html.hs-messages-widget-open.hs-messages-mobile,html.hs-messages-widget-open.hs-messages-mobile body{overflow:hidden!important;position:relative!important}html.hs-messages-widget-open.hs-messages-mobile body{height:100%!important;margin:0!important}#hubspot-messages-iframe-container{display:initial!important;z-index:2147483647;position:fixed!important;bottom:0!important}#hubspot-messages-iframe-container.widget-align-left{left:0!important}#hubspot-messages-iframe-container.widget-align-right{right:0!important}#hubspot-messages-iframe-container.internal{z-index:1016}#hubspot-messages-iframe-container.internal iframe{min-width:108px}#hubspot-messages-iframe-container .hs-shadow-container{display:initial!important;z-index:-1;position:absolute;width:0;height:0;bottom:0;content:""}#hubspot-messages-iframe-container .hs-shadow-container.internal{display:none!important}#hubspot-messages-iframe-container .hs-shadow-container.active{width:400px;height:400px}#hubspot-messages-iframe-container iframe{display:initial!important;width:100%!important;height:100%!important;border:none!important;position:absolute!important;bottom:0!important;right:0!important;background:transparent!important}</style>
+    <!-- Begin Jekyll GTM tag v1.0.3 (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8NWRND"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Jekyll GTM tag v1.0.3 (noscript) -->
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://meetrix.io/">Meetrix.IO</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://meetrix.io/blog/webrtc.html">WebRTC</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://meetrix.io/blog/devops.html">Devops</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://meetrix.io/blog/general.html">General</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://meetrix.io/blog/products.html">Products</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://meetrix.io/blog/services.html">Services</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button" count="0" style="">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(&#39;/blog/assets/images/aws/04-how-to-change-the-default-ubuntu-kernel/change-ubuntu-kernel.jpg&#39;);">
+  
+    <div class="wrapper">
+      <h1 class="page__title" itemprop="headline">
+        
+          How to Change the Default Ubuntu Kernel
+
+        
+      </h1>
+      
+        <p class="page__lead">A complete guide and tutorial on how to change the default ubuntu kernel.
+</p>
+      
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope="" itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/buddhikajay.jpg" alt="Buddhika Jayawardhana (Jay)" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Buddhika Jayawardhana (Jay)</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Principal Engineer @ Meetrix.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        <li>
+          <a href="https://github.com/buddhikajay" itemprop="url">
+            <svg class="svg-inline--fa fa-link fa-w-16 fa-fw" aria-hidden="true" data-prefix="fas" data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg><!-- <i class="fas fa-fw fa-link" aria-hidden="true"></i> --> Website
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="mailto:jay@meetrix.io">
+            <meta itemprop="email" content="jay@meetrix.io">
+            <svg class="svg-inline--fa fa-envelope-square fa-w-14 fa-fw" aria-hidden="true" data-prefix="fas" data-icon="envelope-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM178.117 262.104C87.429 196.287 88.353 196.121 64 177.167V152c0-13.255 10.745-24 24-24h272c13.255 0 24 10.745 24 24v25.167c-24.371 18.969-23.434 19.124-114.117 84.938-10.5 7.655-31.392 26.12-45.883 25.894-14.503.218-35.367-18.227-45.883-25.895zM384 217.775V360c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V217.775c13.958 10.794 33.329 25.236 95.303 70.214 14.162 10.341 37.975 32.145 64.694 32.01 26.887.134 51.037-22.041 64.72-32.025 61.958-44.965 81.325-59.406 95.283-70.199z"></path></svg><!-- <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> --> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/@buddhikajaywar" itemprop="sameAs">
+            <svg class="svg-inline--fa fa-twitter-square fa-w-14 fa-fw" aria-hidden="true" data-prefix="fab" data-icon="twitter-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path></svg><!-- <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> --> Twitter
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">AWS</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/installing_aws_cli.html" class="">1. Settingup AWS Cli</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/uploading/large-files.html" class="">2. Uploading Large Files to AWS S3</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/ec2/import-export.html" class="">3. Import/Export Virtual Machine Images</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html" class="active">4. Changing the Default Ubuntu Kernel</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/04-resource-interpreted-as-stylesheet-but-transferred.html" class="">5. Resource interpreted as Stylesheet but transferred</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/06-using-step-functions-to-schedule-your-lambda.html" class="">6. Using Step Functions to Schedule Your Lambda</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/07-passing-data-between-lambda-in-aws-step-function.html" class="">7. Passing data between lambda in AWS Step Function</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/08-AWS-billing-for-jitsi-customers.html" class="">8. AWS billing for Jisi users</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/schedule-turn-off-always-on-webrtc-jvbs-jitsi-on-aws-ec2-auto-scaling-group.html" class="">9. Schedule turn off/ on of Jitsi JVB auto scaling groups on AWS EC2</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/aws-marketplace-100-concurrent-user-unlimitedhosts-recording-jitsi-meet-video-conferencing.html" class="">10. 100 Concurrent user video conferencing platform powered by Jitsi meet (with recording) on AWS marketplace</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/aws-marketplace-250-concurrent-user-unlimitedhosts-jitsi-meet-video-conferencing.html" class="">11. 250 Concurrent user video conferencing platform powered by Jitsi meet on AWS marketplace</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/aws-marketplace-250-concurrent-user-unlimitedhosts-jitsi-meet-video-conferencing-recording.html" class="">12. 250 Concurrent user video conferencing platform with recording powered by Jitsi meet on AWS marketplace</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/aws-marketplace-500-concurrent-user-unlimitedhosts-jitsi-meet-video-conferencing.html" class="">13. 500 Concurrent user video conferencing platform powered by Jitsi meet on AWS marketplace</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/aws-marketplace-500-concurrent-user-unlimitedhosts-jitsi-meet-video-conferencing-recording.html" class="">14. 500 Concurrent user video conferencing platform with recording powered by Jitsi meet on AWS marketplace</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/Infrastructure-automation-through-Terraform-and-Kubernetes.html" class="">15. Overview of Infrastructure automation through Terraform and Kubernetes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/AWS-EKS-auto-scaling.html" class="">16. Benefits of setting up AWS EKS Jitsi auto scaling</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="https://meetrix.io/blog/aws/kubernetes-auto-scaling.html" class="">17. Benefits of Kubernetes Autoscaling</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="How to Change the Default Ubuntu Kernel">
+    <meta itemprop="description" content="A complete guide and tutorial on how to change the default ubuntu kernel.">
+    
+    <meta itemprop="dateModified" content="August 05, 2018">
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><svg class="svg-inline--fa fa-file-alt fa-w-12" aria-hidden="true" data-prefix="fas" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg><!-- <i class="fas fa-file-alt"></i> --> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html#install-the-generic-kernel">Install the Generic Kernel</a></li>
+  <li><a href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html#backup-first">Backup First</a></li>
+  <li><a href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html#show-loaded-kernel">Show Loaded Kernel</a></li>
+  <li><a href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html#show-availalbe-options">Show Availalbe options</a></li>
+  <li><a href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html#create-the-default-menu-entry">Create the default menu entry</a></li>
+  <li><a href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html#edit-grub">Edit Grub</a></li>
+  <li><a href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html#update-and-reboot">Update and Reboot</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>These instructions were tested on Ubuntu 16.04 environment.</p>
+
+<h2 id="install-the-generic-kernel">Install the Generic Kernel</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nt">-y</span> <span class="nb">install </span>linux-image-extra-virtual
+</code></pre></div></div>
+
+<h2 id="backup-first">Backup First</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> /etc/default/grub /etc/default/grub.bak
+</code></pre></div></div>
+
+<h2 id="show-loaded-kernel">Show Loaded Kernel</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">uname</span> <span class="nt">-r</span>
+</code></pre></div></div>
+
+<h2 id="show-availalbe-options">Show Availalbe options</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="nt">-A100</span> submenu  /boot/grub/grub.cfg |grep menuentry
+</code></pre></div></div>
+
+<p>output</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submenu <span class="s1">'Advanced options for Ubuntu'</span> <span class="nv">$menuentry_id_option</span> <span class="s1">'gnulinux-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29'</span> <span class="o">{</span>
+    menuentry <span class="s1">'Ubuntu, with Linux 4.4.0-1062-aws'</span> <span class="nt">--class</span> ubuntu <span class="nt">--class</span> gnu-linux <span class="nt">--class</span> gnu <span class="nt">--class</span> os <span class="nv">$menuentry_id_option</span> <span class="s1">'gnulinux-4.4.0-1062-aws-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29'</span> <span class="o">{</span>
+    menuentry <span class="s1">'Ubuntu, with Linux 4.4.0-1062-aws (recovery mode)'</span> <span class="nt">--class</span> ubuntu <span class="nt">--class</span> gnu-linux <span class="nt">--class</span> gnu <span class="nt">--class</span> os <span class="nv">$menuentry_id_option</span> <span class="s1">'gnulinux-4.4.0-1062-aws-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29'</span> <span class="o">{</span>
+    menuentry <span class="s1">'Ubuntu, with Linux 4.4.0-1061-aws'</span> <span class="nt">--class</span> ubuntu <span class="nt">--class</span> gnu-linux <span class="nt">--class</span> gnu <span class="nt">--class</span> os <span class="nv">$menuentry_id_option</span> <span class="s1">'gnulinux-4.4.0-1061-aws-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29'</span> <span class="o">{</span>
+    menuentry <span class="s1">'Ubuntu, with Linux 4.4.0-1061-aws (recovery mode)'</span> <span class="nt">--class</span> ubuntu <span class="nt">--class</span> gnu-linux <span class="nt">--class</span> gnu <span class="nt">--class</span> os <span class="nv">$menuentry_id_option</span> <span class="s1">'gnulinux-4.4.0-1061-aws-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29'</span> <span class="o">{</span>
+    menuentry <span class="s1">'Ubuntu, with Linux 4.4.0-131-generic'</span> <span class="nt">--class</span> ubuntu <span class="nt">--class</span> gnu-linux <span class="nt">--class</span> gnu <span class="nt">--class</span> os <span class="nv">$menuentry_id_option</span> <span class="s1">'gnulinux-4.4.0-131-generic-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29'</span> <span class="o">{</span>
+    menuentry <span class="s1">'Ubuntu, with Linux 4.4.0-131-generic (recovery mode)'</span> <span class="nt">--class</span> ubuntu <span class="nt">--class</span> gnu-linux <span class="nt">--class</span> gnu <span class="nt">--class</span> os <span class="nv">$menuentry_id_option</span> <span class="s1">'gnulinux-4.4.0-131-generic-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29'</span> <span class="o">{</span>
+</code></pre></div></div>
+
+<h2 id="create-the-default-menu-entry">Create the default menu entry</h2>
+
+<p>find the ids of parent and child menu entries.
+For example,
+menu entry id for <code class="language-plaintext highlighter-rouge">Advanced options for Ubuntu</code> is <code class="language-plaintext highlighter-rouge">gnulinux-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29</code></p>
+
+<p>menu entry for <code class="language-plaintext highlighter-rouge">Ubuntu, with Linux 4.4.0-131-generic</code> is <code class="language-plaintext highlighter-rouge">gnulinux-4.4.0-131-generic-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29</code></p>
+
+<p>Concat those two strings with <code class="language-plaintext highlighter-rouge">&gt;</code>. Result would be like</p>
+
+<p><code class="language-plaintext highlighter-rouge">"gnulinux-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29&gt;gnulinux-4.4.0-131-generic-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29"</code></p>
+
+<h2 id="edit-grub">Edit Grub</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /etc/default/grub
+</code></pre></div></div>
+
+<p>and replace <code class="language-plaintext highlighter-rouge">GRUB_DEFAULT</code> with above value (With Quotes)</p>
+
+<p>File would look like</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">GRUB_DEFAULT</span><span class="o">=</span><span class="s2">"gnulinux-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29&gt;gnulinux-4.4.0-131-generic-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29"</span>
+<span class="nv">GRUB_HIDDEN_TIMEOUT</span><span class="o">=</span>0
+<span class="nv">GRUB_HIDDEN_TIMEOUT_QUIET</span><span class="o">=</span><span class="nb">true
+</span><span class="nv">GRUB_TIMEOUT</span><span class="o">=</span>0
+<span class="nv">GRUB_DISTRIBUTOR</span><span class="o">=</span><span class="sb">`</span>lsb_release <span class="nt">-i</span> <span class="nt">-s</span> 2&gt; /dev/null <span class="o">||</span> <span class="nb">echo </span>Debian<span class="sb">`</span>
+<span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">"console=tty1 console=ttyS0"</span>
+<span class="nv">GRUB_CMDLINE_LINUX</span><span class="o">=</span><span class="s2">""</span>
+</code></pre></div></div>
+
+<h2 id="update-and-reboot">Update and Reboot</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update-grub
+<span class="nb">sudo </span>reboot
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><svg class="svg-inline--fa fa-calendar-alt fa-w-14 fa-fw" aria-hidden="true" data-prefix="fas" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M436 160H12c-6.6 0-12-5.4-12-12v-36c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48v36c0 6.6-5.4 12-12 12zM12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm116 204c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40z"></path></svg><!-- <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> --> Updated:</strong> <time datetime="2018-08-05">August 05, 2018</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="https://meetrix.io/blog/aws/ec2/import-export.html" class="pagination--pager" title="How to Import/Export Virtual Machine Images on AWS
+">Previous</a>
+    
+    
+      <a href="https://meetrix.io/blog/aws/04-resource-interpreted-as-stylesheet-but-transferred.html" class="pagination--pager" title="Resource interpreted as Stylesheet but transferred with MIME type application/xml
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Leave a Comment</h4>
+      <section class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html" data-mobile="true" data-num-posts="5" data-width="100%" data-colorscheme="light" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=131906234232845&amp;color_scheme=light&amp;container_width=636&amp;height=100&amp;href=https%3A%2F%2Fmeetrix.io%2Fblog%2Faws%2Fchanging-default-ubuntu-kernel.html&amp;locale=en_US&amp;mobile=true&amp;sdk=joey&amp;version=v2.5&amp;width=" style="width: 100%;"><span style="vertical-align: top; width: 100%; height: 0px; overflow: hidden;"><iframe name="f3a141a31aab918" width="1000px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/comments.html" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></section>
+    
+</div>
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"><div class="ais-search-box"><input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Enter your search term..." role="textbox" spellcheck="false" type="text" value="" class="ais-search-box--input"><span class=""><div class="ais-search-box--powered-by">
+  Search by
+  <a class="ais-search-box--powered-by-link" href="https://www.algolia.com/?utm_source=instantsearch.js&amp;utm_medium=website&amp;utm_content=meetrix.io&amp;utm_campaign=poweredby" target="_blank">Algolia</a>
+</div></span><span class="ais-search-box--magnifier-wrapper"><div class="ais-search-box--magnifier">
+  <svg xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40" width="100%" height="100%">
+    <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z" fill-rule="evenodd">
+    </path>
+  </svg>
+</div></span><span class="ais-search-box--reset-wrapper" style="display: none;"><button type="reset" title="Clear the search query." class="ais-search-box--reset">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="100%" height="100%">
+    <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd">
+    </path>
+  </svg>
+</button></span></div></div>
+    <div class="search-hits"><div class="ais-hits"><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/webrtc/jitsi/zoom-enterprise-plan-jitsi-meet-enterprise-by-meetrix.html">Zoom Enterprise plan vs Jitsi Meet Enterprise by Meetrix</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Meetrix is an enterprise integrator of Jitsi Meet. Having served over 400 customers with various WebRTC solutions, we thought it’s high time to compare Zoom Enterprise vs Jitsi Meet over a 2minute read worth a million dollars.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/webrtc/jitsi/largest-ever-concurrent-Jitsi-conference-2022.html">Jitsi Meet enterprise architecture by meetrix for 100-235 concurrent users : largest ever concurrent Jitsi conferences (2022)</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>The purpose of this test is to push Jitsi to perform at its peak performance using enterprise grade hardware and network infrastructure provided by AWS. Our testing is backed by the industry’s foremost expertise in WebRTC.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/general/jitsi-meet-101-do-not-get-conned.html">Jitsi meet 101 : ensuring your not getting conned while getting commercial Jitsi support</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>This article was written to help potential users of Jitsi, especially small to medium customers who might not have the internal know-how to assess a potential vendor quote technically While the pandemic has changed the world in numerous ways, one of the best outcomes has been the drive to work remotely, from wherever people call home or their stay.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/webrtc/jitsi/how-recording-and-streaming-videos-with-jibri-works-on-jitsi-meet.html">How recording and streaming videos with Jibri works on Jitsi meet</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Jibri is a server component which makes up the Jitsi meet platform for a fully fledged and robust video conferencing experience. Simply put, Jibri enables streaming of conferences and recording them to server or other backup storage systems.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/webrtc/jitsi/adding-sip-gateway-to-Jitsi-Meet.html">Adding sip-gateway to Jitsi Meet</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>What is Jitsi Gateway to SIP? a server-side application that allows regular SIP clients to join Jitsi Meet conferences hosted by Jitsi Videobridge.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/webrtc/jitsi/setting-up-jibri-recording-on-ubuntu.html">Setting up Jibri for Jitsi Meet meeting recording and streaming on Ubuntu 18, Ubuntu 20.04 for Nginx or Apache</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Jibri is the component that is used for recording, streaming and SIP video gateway.It works by launching a Chrome instance rendered in a virtual framebuffer and capturing and encoding the output with ffmpeg. It is intended to be run on a separate machine (or a VM), with no other applications using the display or audio devices. Only one recording at a time is supported on a single jibri.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/products/benefits-of-jitsi-meet-admin-panel-for-events-companies.html">Jitsi Meet Admin panel for Entertainment companies and virtual event hosts</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>The best time to take your entertainment business online is here. Jitsi meet can easily accommodate over 100 concurrent users inside a webinar and stream for thousands or even millions of concurrent viewers in real time.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/products/jitsi-meet-admin-panel-for-events-entertainment-industry.html"> How Jitsi Meet Admin Panel Can Benefit the Entertainment and Events Management Industry</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>While many industries were forced into digitalization due to recent global events, the entertainment and events management industry has been making use of modern technology for quite some time, especially in video conferencing. Gone are the days when you had to travel for hours to meet up with clients and have company meetings. With the advancements in video conferencing technology, now it’s just a matter of everyone meeting up in a virtual meeting room. Jitsi is one of the prominent technologies that provides the right infrastructure to facilitate this robust video conferencing and communication. To take things up a notch, <a href="https://meetrix.io/">Meetrix</a> has built the <a href="https://meetingmanager.meetrix.io/signin">Jitsi</a> Meet Admin Panel that is a great, free and open source tool that can be used to manage all your online meetings with ease.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/products/benefits-of-jitsi-meet-admin-panel-for-education-organisations.html">How can Jitsi Meet Admin Panel can Benefit Your Educational Organisation</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>With the recent global events and the developments in <strong>video conferencing</strong> technology, conventional education has made its way to more of a modernised, online based form of education. Schools and universities have turned into online classrooms and attending a lecture is usually through an online video conferencing session. With such advancements in the field of education, Jitsi has played a vital role in setting up the right infrastructure to facilitate robust video conferencing and communication. To make things even easier with e-learning, <a href="https://meetrix.io/">Meetrix</a> has built the <a href="https://meetingmanager.meetrix.io/signin">Jitsi</a> Meet Admin panel that is a great, free and open source tool that can help improve a learning management system that educational organisations can benefit from.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/products/features-jitsi-meet-admin-panel.html">Features of Jitsi meet admin panel</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Jitsi meet admin panel is an easy-to-use meeting management tool that you can use to organise, control and administer all your Jitsi meetings. The sophisticated yet robust technology set behind an extremely user-friendly interface enables administrators and select professionals of your organisation to easily manage meeting admins (also called moderators), create and schedule meetings, customise the software according to your company brand and much more.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/products/how-to-setup-admin-users-on-jitsi-meet-admin-panel.html">Setting up Admin users and scheduling meetings on Jitsi Meet Admin Panel</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Jitsi Meet Admin Panel provides you with a wide array of features that can help you manage all your Jitsi meetings easily. Two of such features are setting up admin users and scheduling meetings. This post gives you a brief overview of these features and how you can use them on Jitsi Meet Admin Panel.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/products/benefits-of-jitsi-meet-admin-panel.html">Benefits of scheduling video conferences using Jitsi Meet Admin Panel</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>With the Jitsi Meet Admin Panel’s scheduling feature, planning your Jitsi meetings has never been easier. It is one of the wide array of features that enhances your Jitsi video conferencing experience. This post talks about some of the benefits that you can enjoy by scheduling meetings using the Jitsi meet admin panel.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/webrtc/jitsi/jitsi-as-a-service-for-cpaas-host-locally-scale-as-you-use.html">open source video conferencing CPAAS (Communication platform as a service) for telecommunication and software as as a service companies as a local alternative to Zoom, Microsoft Teams</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>With more and more work from home and video based business process becoming the new norm, the quest to setup a robust, secure meeting platform for inhouse needs is more important than ever. However, finding a reliable software partner who is also an expert at the network management and DevOps. side of the implementation, and who has WebRTC industry leading experience on setting up such systems has become another challenge.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/aws/aws-marketplace-250-concurrent-user-unlimitedhosts-jitsi-meet-video-conferencing.html">Get your 250 concurrent user video conferencing platform through the AWS marketplace. Includes screen share and much more.</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Set up your own jitsi video conferencing platform for two hundred and fifty concurrent users and unlimited hosts.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/aws/aws-marketplace-100-concurrent-user-unlimitedhosts-recording-jitsi-meet-video-conferencing.html">Get your 100 concurrent user video conferencing platform through the AWS marketplace</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Set up your own jitsi video conferencing platform for one hundred concurrent users and unlimited hosts. This setup has been tested to run as expected using the best in class open source WebRTC video conferencing platform, Jitsi Meet.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/aws/aws-marketplace-500-concurrent-user-unlimitedhosts-jitsi-meet-video-conferencing-recording.html">Get your 500 concurrent user video conferencing platform through the AWS marketplace. Includes screen share and much more.</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Set up your own jitsi video conferencing platform for two hundred and fifty concurrent users and unlimited hosts.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/aws/aws-marketplace-250-concurrent-user-unlimitedhosts-jitsi-meet-video-conferencing-recording.html">Get your 250 concurrent user video conferencing platform through the AWS marketplace. Includes recording, screen share and much more.</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Set up your own jitsi video conferencing platform for two hundred and fifty concurrent users and unlimited hosts.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/aws/aws-marketplace-500-concurrent-user-unlimitedhosts-jitsi-meet-video-conferencing.html">Get your 500 concurrent user video conferencing platform through the AWS marketplace. Includes screen share and much more.</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>Set up your own jitsi video conferencing platform for two hundred and fifty concurrent users and unlimited hosts.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/webrtc/jitsi/how-to-setup-jitsi-meet-from-aws-marketplace.html">Tutorial on how to setup Jitsi meet from AWS marketplace using the Jitsi meet auto deployment scripts for AWS by Meetrix</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>The following tutorial will guide you to setup 100-500 user single region Meetrix Jitsi AWS script products from the AWS marketplace.</p></div>
+      </article>
+    </div>
+  </div><div class="ais-hits--item">
+    <div class="list__item">
+      <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://meetrix.io/blog/webrtc/jitsi/jitsi_meet_front_end_customization.html">A tutorial on how to customize the Jitsi meet front end</a></h2>
+        <div class="archive__item-excerpt" itemprop="description"><p>This document guides you to customize the Jitsi meet front end, build and deploy it on your own servers if you need it. We do not recommend changing the front end without Meetrix support services.</p></div>
+      </article>
+    </div>
+  </div></div></div></div>
+      </div>
+    
+    <div class="webrtc-products-wrapper">
+      <div class="webrtc-products">
+  <h5 class="title">Some cool WebRTC and Jitsi products from <a href="https://meetrix.io/" target="_blank">Meetrix.io</a></h5>
+  <div class="product-list">
+    <div class="card" style="background-image: url(&#39;/blog/assets/images/banners/banner1.png&#39;)">
+      <div class="card-top-wrapper">
+        <div class="card-title">Configure 250 user Jitsi Enterprise Platform</div>
+        <div class="price">USD 450</div>
+      </div>
+      <button class="button" onclick="javascript:window.location=&#39;mailto:hello@meetrix.io?subject=Order - Configure 250 user Jitsi Enterprise Platform&amp;body=Hi, %0D%0A%0D%0A I want to speak to you about the above order. Please get in touch for a call. %0D%0A%0D%0A Regards %0D%0A%0D%0A%0D%0A Blog Link - &#39;+window.location.href">
+        Contact Sales
+      </button>
+    </div>
+
+    <div class="card" style="background-image: url(&#39;/blog/assets/images/banners/banner2.png&#39;)">
+      <div class="card-top-wrapper">
+        <div class="card-title">Configure 500 user Jitsi Enterprise Platform<br><span class="title-small">(with auto-scaling)</span></div>
+        <div class="price">USD 1500</div>
+      </div>
+      <button class="button" onclick="javascript:window.location=&#39;mailto:hello@meetrix.io?subject=Order - Configure 500 user Jitsi Enterprise Platform ( with auto-scaling)&amp;body=Hi, %0D%0A%0D%0A I want to speak to you about the above order. Please get in touch for a call. %0D%0A%0D%0A Regards %0D%0A%0D%0A%0D%0A Blog Link - &#39;+window.location.href">
+        Contact Sales
+      </button>
+    </div>
+
+    <div class="card" style="background-image: url(&#39;/blog/assets/images/banners/banner3.png&#39;)">
+      <div class="card-top-wrapper">
+        <div class="card-title">Configure 1000 user Jitsi Enterprise Platform<br><span class="title-small">(with auto-scaling)</span></div>
+        <div class="price">USD 2250</div>
+      </div>
+      <button class="button" onclick="javascript:window.location=&#39;mailto:hello@meetrix.io?subject=Order - Configure 1000 user Jitsi Enterprise Platform (with auto-scaling)&amp;body=Hi, %0D%0A%0D%0A I want to speak to you about the above order. Please get in touch for a call. %0D%0A%0D%0A Regards %0D%0A%0D%0A%0D%0A Blog Link - &#39;+window.location.href">
+        Contact Sales
+      </button>
+    </div>
+
+    <div class="card" style="background-image: url(&#39;/blog/assets/images/banners/banner4.png&#39;)">
+      <div class="card-top-wrapper">
+        <div class="card-title">Debug - Audit existing setups<br><span class="title-small">(1hr)</span></div>
+        <div class="price">USD 300</div>
+      </div>
+      <button class="button" onclick="javascript:window.location=&#39;mailto:hello@meetrix.io?subject=Order - Debug - Audit existing setups (1hr)&amp;body=Hi, %0D%0A%0D%0A I want to speak to you about the above order. Please get in touch for a call. %0D%0A%0D%0A Regards %0D%0A%0D%0A%0D%0A Blog Link - &#39;+window.location.href">
+        Contact Sales
+      </button>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3520835864743683",
+    enable_page_level_ads: true
+  });
+</script> -->
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/meetrixio"><svg class="svg-inline--fa fa-twitter-square fa-w-14 fa-fw" aria-hidden="true" data-prefix="fab" data-icon="twitter-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path></svg><!-- <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> --> Twitter</a></li>
+    
+    
+      <li><a href="https://www.facebook.com/meetrix"><svg class="svg-inline--fa fa-facebook-square fa-w-14 fa-fw" aria-hidden="true" data-prefix="fab" data-icon="facebook-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"></path></svg><!-- <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> --> Facebook</a></li>
+    
+    
+      <li><a href="https://github.com/meetrix"><svg class="svg-inline--fa fa-github fa-w-16 fa-fw" aria-hidden="true" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-fw fa-github" aria-hidden="true"></i> --> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://meetrix.io/blog/feed.xml"><svg class="svg-inline--fa fa-rss-square fa-w-14 fa-fw" aria-hidden="true" data-prefix="fas" data-icon="rss-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM112 416c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm157.533 0h-34.335c-6.011 0-11.051-4.636-11.442-10.634-5.214-80.05-69.243-143.92-149.123-149.123-5.997-.39-10.633-5.431-10.633-11.441v-34.335c0-6.535 5.468-11.777 11.994-11.425 110.546 5.974 198.997 94.536 204.964 204.964.352 6.526-4.89 11.994-11.425 11.994zm103.027 0h-34.334c-6.161 0-11.175-4.882-11.427-11.038-5.598-136.535-115.204-246.161-251.76-251.76C68.882 152.949 64 147.935 64 141.774V107.44c0-6.454 5.338-11.664 11.787-11.432 167.83 6.025 302.21 141.191 308.205 308.205.232 6.449-4.978 11.787-11.432 11.787z"></path></svg><!-- <i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> --> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2023 Meetrix.IO. Powered by <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/main.min.js"></script>
+  <script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/all.js"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/instantsearch.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: '65XAZZDZFN',
+  apiKey: '9d97ce109d7f021a5cccdfb1cd3964b1',
+  indexName: 'meetrix_blog',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  let content = '';
+  if(hit._highlightResult.html != null){
+    content = hit._highlightResult.html.value;
+  }
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="/blog${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+// Starting the search
+search.start();
+</script>
+
+
+
+
+
+  
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","366601784056912");fbq("set","agent","tmgoogletagmanager","366601784056912");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=366601784056912&amp;ev=PageView&amp;noscript=1"></noscript>
+<!-- The other part (top part) of GTAG code is on head/custom.html -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDM4B9B"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=131906234232845";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  
+
+
+
+    <a class="whatspp-button-wrapper" href="https://wa.me/c/94702019082" target="_blank">
+      <div></div>
+    </a>
+
+  
+
+<iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;" src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/saved_resource.html"></iframe><div id="hubspot-messages-iframe-container" class="widget-align-right" style="width: 276px; height: 237.6px;"><div class="hs-shadow-container"></div><iframe src="./How to Change the Default Ubuntu Kernel - Meetrix.IO_files/a736dd9a7ce64ab48f9fad3edb11ed0a.html" id="hubspot-conversations-iframe" role="region" aria-label="Chat Widget" allowfullscreen="" data-test-id="chat-widget-iframe"></iframe></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
