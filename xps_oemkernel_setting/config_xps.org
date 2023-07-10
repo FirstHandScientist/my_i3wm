@@ -1,3 +1,5 @@
+* How to install a specific kernel version
+  checkout here: https://itsfoss.com/upgrade-linux-kernel-ubuntu/
 * how to change default kernel
   https://meetrix.io/blog/aws/changing-default-ubuntu-kernel.html
 
